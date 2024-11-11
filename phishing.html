@@ -1,0 +1,36 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segurança Digital</title>
+
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Segurança Digital</h1>
+            <p>Proteja-se online com dicas e tutoriais de segurança digital</p>
+        </div>
+  <link rel="stylesheet" href="phishingcss.css">
+</head>
+<body>
+  <div class="email-container">
+    <div class="email-header">
+      <h2>Você tem uma nova mensagem!</h2>
+    </div>
+    <div class="email-body">
+      <p>Olá, <strong>usuário</strong>,</p>
+      <p>Seu pagamento de <strong>R$ 1000,00</strong> foi processado com sucesso! Clique no link abaixo para ver os detalhes.</p>
+      <button class="email-link" onclick="showAlert()">Ver Detalhes</button>
+    </div>
+  </div>
+
+  <div id="phishing-alert" class="alert">
+    <p><strong>Atenção!</strong> O link que você clicou pode ser um exemplo de phishing. Não forneça suas informações pessoais!</p>
+    <button onclick="closeAlert()">Continuar para o site</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
